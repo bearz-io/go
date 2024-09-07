@@ -1,0 +1,17 @@
+id: name 
+language: go
+stack: systems
+project: 
+  description: "exec Go Module at go/os/exec."
+  name: "exec Go Module"
+  maintainers:
+    - github@bearz.io
+  metadata:
+    version: 0.0.0
+    kind: module
+    license: MIT
+    repo: https://github.com/bearz-io/go/
+type: library
+tags:
+  - go
+  - exec

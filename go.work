@@ -1,0 +1,11 @@
+go 1.23.1
+
+use (
+	./errors
+	./fs
+	./os
+	./os/env
+	./os/exec
+	./runes
+	./strings
+)

@@ -6,6 +6,7 @@ new path lib='lib':
     case "{{lib}}" in
         "lib")
             moon generate lib "{{path}}" -- --path "{{path}}"
+            go work use "{{path}}"
             ;;
         *)
             echo "Unknown library type: {{lib}}"
