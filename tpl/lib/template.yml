@@ -1,0 +1,16 @@
+id: lib
+title: Go Library
+description: A Go library template.
+
+variables:
+   path: 
+      type: string
+      required: true
+      order: 1
+      prompt: "Path to the library"
+   description: 
+      type: string
+      required: false
+      order: 2
+      prompt: "Description of the library"
+  

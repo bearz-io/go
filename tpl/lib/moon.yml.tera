@@ -1,0 +1,19 @@
+{% set path2 = path | replace(from="go/", to="") %}
+{% set name = path | split(pat="/") | last %}
+id: name 
+language: go
+stack: systems
+project: 
+  description: "{%if description %}{{description}}{%else%}{{name}} Go Module at go/{{path2}}.{%endif%}"
+  name: "{{name}} Go Module"
+  maintainers:
+    - github@bearz.io
+  metadata:
+    version: 0.0.0
+    kind: module
+    license: MIT
+    repo: https://github.com/bearz-io/go/
+type: library
+tags:
+  - go
+  - {{ name }}

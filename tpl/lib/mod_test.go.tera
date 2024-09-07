@@ -1,0 +1,18 @@
+{% set path2 = path | replace(from="go/", to="") %}
+{% set name = path | split(pat="/") | last %}
+---
+to: {{name}}_test.go
+---
+
+package {{name}}_test
+
+import (
+    "testing"
+
+    "github.com/bearz-io/go/{{path2}}"
+    "github.com/stretchr/testify/assert"
+)
+
+func Test{{name | capitalize}}(t *testing.T) {
+    assert.Equal(t, {{name}}.TEST, "TEST")
+}

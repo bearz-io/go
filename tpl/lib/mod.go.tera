@@ -1,0 +1,11 @@
+{% set name = path | split(pat="/") | last %}
+---
+to: {{name}}.go
+---
+
+package {{name}}
+
+const TEST = "TEST"
+
+func init() {
+}
