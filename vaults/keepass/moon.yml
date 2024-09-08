@@ -1,0 +1,17 @@
+id: name 
+language: go
+stack: systems
+project: 
+  description: "keepass Go Module at go/vaults/keepass."
+  name: "keepass Go Module"
+  maintainers:
+    - github@bearz.io
+  metadata:
+    version: 0.0.0
+    kind: module
+    license: MIT
+    repo: https://github.com/bearz-io/go/
+type: library
+tags:
+  - go
+  - keepass

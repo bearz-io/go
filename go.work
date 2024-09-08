@@ -7,5 +7,11 @@ use (
 	./os/env
 	./os/exec
 	./runes
+	./secrets
 	./strings
+	./vaults
+	./vaults/azure
+	./vaults/hashi
+	./vaults/keepass
+	./vaults/sops
 )
