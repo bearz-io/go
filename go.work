@@ -7,7 +7,9 @@ use (
 	./os/env
 	./os/exec
 	./os/hostfile
+	./os/paths
 	./os/ps
+	./os/secrets
 	./runes
 	./secrets
 	./strings

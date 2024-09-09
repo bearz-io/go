@@ -12,6 +12,7 @@ var (
 	ErrNotImpelemented = NewResourceError("not implemented", "feature")
 	ErrArgEmpty        = NewArgumentError("argument is empty", "unknown")
 	ErrArgNil          = NewArgumentError("argument is nil", "unknown")
+	ErrAccessDenied    = NewResourceError("access denied", "resource")
 )
 
 func New(msg string) error {

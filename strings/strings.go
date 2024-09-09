@@ -90,6 +90,7 @@ func IndexFunc(s string, f func(rune) bool) int {
 }
 
 func IndexRune(s string, r rune) int {
+
 	return str.IndexRune(s, r)
 }
 
