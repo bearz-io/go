@@ -92,3 +92,23 @@ func IndexFunc(s string, f func(rune) bool) int {
 func IndexRune(s string, r rune) int {
 	return str.IndexRune(s, r)
 }
+
+func SplitAny(s, sep string) []string {
+	set := make([]string, 0)
+	sb := str.Builder{}
+	for _, r := range s {
+		if str.ContainsRune(sep, r) {
+			set = append(set, sb.String())
+			sb.Reset()
+			continue
+		}
+
+		sb.WriteRune(r)
+	}
+
+	if sb.Len() > 0 {
+		set = append(set, sb.String())
+	}
+
+	return set
+}

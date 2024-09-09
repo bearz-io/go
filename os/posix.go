@@ -2,6 +2,10 @@
 
 package os
 
+import (
+	o "os"
+)
+
 const (
 	POSIX    = true
 	EOL      = "\n"
@@ -9,3 +13,12 @@ const (
 	DIR_SEP  = "/"
 	DEV_NULL = "/dev/null"
 )
+
+func IsWsl() bool {
+	_, err := o.Stat("/proc/sys/fs/binfmt_misc/WSLInterop")
+	return err == nil
+}
+
+func IsWindows() bool {
+	return false
+}

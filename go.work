@@ -6,6 +6,8 @@ use (
 	./os
 	./os/env
 	./os/exec
+	./os/hostfile
+	./os/ps
 	./runes
 	./secrets
 	./strings

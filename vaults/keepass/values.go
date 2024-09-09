@@ -27,13 +27,6 @@ func NewKeyProtectedValue(key string, value string) *KeyValue {
 	}
 }
 
-func newValue(key string, value string) *gokeepasslib.ValueData {
-	return &gokeepasslib.ValueData{
-		Key:   key,
-		Value: gokeepasslib.V{Content: value},
-	}
-}
-
 func (kv *KeyValue) Key() string {
 	return kv.data.Key
 }
