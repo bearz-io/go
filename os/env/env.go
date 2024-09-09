@@ -50,11 +50,11 @@ func Print() {
 }
 
 func GetPath() string {
-	return os.Getenv("Path")
+	return os.Getenv(PATH)
 }
 
 func SetPath(path string) error {
-	return os.Setenv("Path", path)
+	return os.Setenv(PATH, path)
 }
 
 func HasPath(path string) bool {

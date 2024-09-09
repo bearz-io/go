@@ -5,6 +5,7 @@ import (
 	"io"
 	"os"
 	"os/exec"
+	"path/filepath"
 	"time"
 )
 
@@ -266,6 +267,14 @@ func (c *Cmd) Start() error {
 
 	if logger != nil {
 		logger(c)
+	}
+
+	p := c.Cmd.Path
+	if p != "" && !filepath.IsAbs(p) {
+		p2, err := Find(p, nil)
+		if err == nil {
+			c.Cmd.Path = p2
+		}
 	}
 
 	return c.Cmd.Start()

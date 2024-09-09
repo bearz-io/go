@@ -45,6 +45,7 @@ func WhichFirst(command string, options *WhichOptions) (string, bool) {
 
 	if filepath.IsAbs(command) {
 		fi, err := os.Lstat(command)
+
 		if err != nil {
 			return "", false
 		}
@@ -69,6 +70,7 @@ func WhichFirst(command string, options *WhichOptions) (string, bool) {
 	}
 
 	pathSegments = append(pathSegments, env.SplitPath()...)
+
 	for i, path := range pathSegments {
 		value := env.ExpandSafe(path)
 		if value == "" {
@@ -143,7 +145,7 @@ func WhichFirst(command string, options *WhichOptions) (string, bool) {
 					continue
 				}
 
-				if strings.EqualFold(entry.Name(), command) {
+				if strings.EqualFold(entry.Name(), name) {
 					fp := filepath.Join(path, entry.Name())
 					whichCache[name] = fp
 					return fp, true

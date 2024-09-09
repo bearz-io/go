@@ -14,7 +14,7 @@ type Executable struct {
 	Path     string
 	Variable string
 	Windows  []string
-	Unix     []string
+	Linux    []string
 	Darwin   []string
 }
 
@@ -128,7 +128,7 @@ func (r *ExecutableRegistry) Find(name string, options *WhichOptions) (string, e
 		// fallthrough to unix
 	}
 
-	for _, path := range m.Darwin {
+	for _, path := range m.Linux {
 		if strings.IsEmptySpace(path) {
 			continue
 		}

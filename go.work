@@ -12,6 +12,10 @@ use (
 	./os/secrets
 	./runes
 	./secrets
+	./spawn/bash
+	./spawn/powershell
+	./spawn/pwsh
+	./spawn/sh
 	./strings
 	./vaults
 	./vaults/azure
