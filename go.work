@@ -1,6 +1,13 @@
 go 1.23.1
 
 use (
+	./apps/bz
+	./apps/bzcompose
+	./apps/bzenv
+	./apps/bzget
+	./apps/bzshift
+	./apps/bztask
+	./apps/bzvault
 	./crypto
 	./errors
 	./fs
