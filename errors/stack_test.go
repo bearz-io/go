@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/bearz-io/errors"
+	"github.com/bearz-io/go/errors"
 )
 
 const (
