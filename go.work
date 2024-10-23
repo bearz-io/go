@@ -9,6 +9,7 @@ use (
 	./crypto
 	./errors
 	./fs
+	./keepass
 	./os
 	./runes
 	./strings
