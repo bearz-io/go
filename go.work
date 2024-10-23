@@ -5,6 +5,7 @@ use (
 	./bz-get
 	./bz-sec
 	./bz-tpl
+	./configblocks
 	./crypto
 	./errors
 	./fs
