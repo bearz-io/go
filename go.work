@@ -1,0 +1,13 @@
+go 1.23.1
+
+use (
+	./bz-deploy
+	./bz-get
+	./bz-sec
+	./bz-tpl
+	./crypto
+	./errors
+	./fs
+	./os
+	./vaults
+)
